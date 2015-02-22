@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies Data Explorer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Movies Data Explorer">
+  <meta name="author" content="Ossama W. Obeid">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Movies Data Explorer</h1>
+    <h2></h2>
+    <p>Ossama W. Obeid<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This set of slides attempts to explain the usage of the shiny app
+I created for the course project of the Developing Data Products class on
+Coursera.</p>
+
+<p>The app description is as follows:</p>
+
+<pre>
+This app can be used to explore the movies data set provided with the ggplot2 library in R.
+The side bar allows you to choose a genre of movies as well as a selected property.
+The below plot displays a histogram of the distribution of values of the selected property
+for the selected genre.
+Aditionally, a green line is drawn where the mean of that property for the genre is
+located and a red line for the mean same property across all genres.
+</pre>
+
+<p>A live version of the shiny app can be found on <a href="http://bit.ly/1zYS14l">http://bit.ly/1zYS14l</a>.</p>
+
+<p>The GitHub page is <a href="https://github.com/owo/devdataprod_project">https://github.com/owo/devdataprod_project</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Controls</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./controls.png" alt="Controls"></p>
+
+<p>The app features two controllable parameters:</p>
+
+<p>1) Genre: Action, Animation, Comedy, Drama, Documentary, Romance, and Short.
+  2) Property: Year, Length, Budget, and Rating.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Output</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./display.png" alt="Display"></p>
+
+<p>The output is a histogram distribution of the selected property for all movies belonging to the selected genre.
+In this case, we are looking at the distribution of Animation movies over year of production.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Output (continued)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Also notice the red and turquoise lines.</p>
+
+<p>The red line represents the mean of the selected property over all genres.</p>
+
+<p>The turquoise line rpresents the mean of the selected property over only the selected genre.</p>
+
+<p>While this tool is very simple, it does provide a way to get a sense of the data very quickly without having to write R code.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Controls'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Output'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Output (continued)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
